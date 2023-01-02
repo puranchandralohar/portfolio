@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import './nav.css'
 
@@ -15,9 +15,9 @@ const links = [
       active: 'about'
   },
   {
-      name: 'Portfolio',
-      to: '/portfolio',
-      active: 'portfolio'
+      name: 'Projects',
+      to: '/projects',
+      active: 'projects'
   }
 ]
 
@@ -27,7 +27,7 @@ export const Nav = () => {
     <nav>
       {links.map((link,index)=>{
           return(
-            <li key={index}>{link.name}</li>
+            <Link to={link.to} key={index}>{link.name}</Link>
           )
       })}
     </nav>
