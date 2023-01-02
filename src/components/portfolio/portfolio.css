@@ -1,0 +1,10 @@
+.my_image{
+    padding: 0.2rem;
+    height: 250px;
+    width: 250px;
+    background:linear-gradient(
+        to left, #07bd07, yellow
+    );
+    border-radius: 50%;
+    box-shadow: 0 0 1rem #ebebeb, 0 0.2rem 1rem #4d4a4a;
+}
